@@ -28,6 +28,18 @@
 
             --background-color: #198BFC;
         }
+        
+        .flex-parent {
+            display: flex;
+          }
+          
+        .jc-center {
+            justify-content: center;
+          }
+          
+        button.margin-right {
+            margin-right: 20px;
+        }
 
         .btn.btn-background-circle {
             z-index: 1;
@@ -91,7 +103,7 @@
   
 
   hr {
-    height: 5px;
+    height: 3px;
     background: #BDBDBD;
     border: none;
   }
