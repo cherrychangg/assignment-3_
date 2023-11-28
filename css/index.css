@@ -103,15 +103,15 @@
 .grid-container {
   display: flex;
   grid-template-columns: 200px;
-  gap: 20px;
-  background-color: #2F4858;
+  gap: 80px;
+  background-color: #7ec2ec;
   padding: 20px;
   justify-content: center ;
 }
+
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
 }
