@@ -13,7 +13,6 @@ html, body, #root {
 }
 
 p {
-    padding-bottom: 20px;
     text-align: center;
     padding: 20px 20px;
     color: #fce2ca;
@@ -100,8 +99,10 @@ div{
 
 .div1 {
     float: left;
+    margin-left:330px;
 }
 
 .div2 {
     float:right;
+    margin-right: 330px;
 }
