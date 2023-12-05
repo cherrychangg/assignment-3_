@@ -1,7 +1,12 @@
-  /* The Box */
+/* The Box for homepage */
 
-  /* https://www.youtube.com/watch?v=cH0TC9gWiAg&t=90s */
+/* Code copied from: https://www.youtube.com/watch?v=9dU6KkLqnGg&t=42s
+Author: Six Minutes. Smarter.
+Name: CSS Flexbox Properties with 3 Boxes
+Description: Experiment with common CSS Flexbox properties while manipulating three div boxes on the webpage.
+Date retrieved: Nov 7, 2019 */
 
+/* Copied code starts */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -11,23 +16,64 @@
   }
 
   .flex-container div{
-    width: 550px;height: 500px; margin: 5px; padding: 5px;
+    width: 550px;
+    height: 500px; 
+    margin: 15px; 
+    padding: 10px;
     background-color: rgb(7, 203, 203);
-    font-size: 3em; text-align: center; color: white;
+    font-size: 3em; 
+    text-align: center; 
+    color: white;
     position: relative; 
     border-radius: 20px;
   }
 
   .flex-container div:nth-child(1){
-    flex: 0 1 600px;
+    flex: 0 1 550px;
+
   }
 
   .flex-container div:nth-child(2){
-    flex: 0 0 700px;
+    flex: 0 0 550px;
+
   }
 
   .flex-container div:nth-child(3){
-    flex: 0 0 calc(100% - 80px);
+    flex: 0 0 calc(100% - 250px);
+
+  }
+
+
+  /* The Box for the portfolio */
+
+  .flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    justify-content: center;
+    margin: 4em 1em;
+  }
+
+  .flex-container1 div{
+    width: 550px;height: 500px; margin: 5px; padding: 5px;
+    background-color: rgb(7, 203, 203);
+    font-size: 3em; 
+    text-align: center; 
+    color: white;
+    position: relative; 
+    border-radius: 20px;
+  }
+
+  .flex-container1 div:nth-child(1){
+    flex: 0 1 600px;
+  }
+
+  .flex-container1 div:nth-child(2){
+    flex: 0 0 700px;
+  }
+
+  .flex-container1 div:nth-child(3){
+    flex: 0 0 calc(100% - 50px);
   }
 
 /*Copied code ends*/
@@ -43,6 +89,7 @@
     top: 0;
     left: 0;
   }
+
 
 /*Box for the experience page*/
   .box {
@@ -62,12 +109,14 @@
   }
   
 
-/*https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
+/* Code copied from: https://www.w3schools.com/howto/howto_css_blurred_background.asp
+Author: Warren Davies
+Name: 10 Best CSS button hover effects
+Description: Displays an hover effect button.
+Date retrieved: October 18, 2023 */
 
+/* Copied code starts */
   .bg-image {
-    /* The image used */
-    background-image: url("../img/HongKong.jpg");
-    background-image: url("../img/Toronto.JPG");
     
     /* Add the blur effect */
     filter: blur(8px);
@@ -99,12 +148,21 @@
     text-align: center;
   }
 
+
 /* Position text beside the image */
+/* Code copied from:  https://www.w3schools.com/cssref/pr_grid-template-columns.php
+Author: w3school
+Name: CSS grid-template-columns Property
+Description: Grid for the layout. 
+Date retrieved: October 18, 2023 */
+
+/* Copied code starts */
+
 .grid-container {
   display: flex;
   grid-template-columns: 200px;
   gap: 80px;
-  background-color: #7ec2ec;
+  background-color: #2F4858;
   padding: 20px;
   justify-content: center ;
 }
@@ -115,3 +173,4 @@
   text-align: center;
   padding: 20px 0;
 }
+/* Copied code end */
