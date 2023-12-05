@@ -1,24 +1,24 @@
 /* The page layout */
 #root {
-    position: relative;
+  position: relative;
 }
 
 html, body, #root {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    display: flex;
-    flex-basis: 100%;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-basis: 100%;
+  width: 100%;
 }
 
 p {
-    text-align: center;
-    padding: 20px 20px;
-    color: #fce2ca;
-    font-size: 40px;
-    position: absolute;
-    width: 946px;
+  text-align: center;
+  padding: 20px 20px;
+  color: #fce2ca;
+  font-size: 40px;
+  position: absolute;
+  width: 946px;
 }
 
 h1 {
@@ -34,39 +34,39 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
-    text-align:center;
-    color: white;
-  }
+  font-size: 25px;
+  text-align:center;
+  color: white;
+}
 
 h4{
-    font-size: 20px;
-    text-align: center;
-    color:white;
+  font-size: 20px;
+  text-align: center;
+  color:white;
 }
 
 h5{
-    font-size: 40px;
-    text-align: center;
-    color:white;
+  font-size: 40px;
+  text-align: center;
+  color:white;
 }
 
 h6 {
-    font-size: 20px;
-    text-align:left;
-    color: white;
-  }
+  font-size: 20px;
+  text-align:left;
+  color: white;
+}
 
 h7 {
-    font-size: 40px;
-    text-align: right;
-    color:white;
+  font-size: 40px;
+  text-align: right;
+  color:white;
 }
 
 h8 {
-      font-size: 20px;
-      text-align:right;
-      color: white;
+    font-size: 20px;
+    text-align:right;
+    color: white;
 }
 
 h9{
@@ -98,11 +98,23 @@ div{
 }
 
 .div1 {
-    float: left;
-    margin-left:330px;
+  float: left;
+  margin-left:330px;
 }
 
 .div2 {
-    float:right;
-    margin-right: 330px;
+  float:right;
+  margin-right: 330px;
+}
+
+.div3 {
+  float: left;
+}
+
+.div4 {
+  float:right;
+}
+
+.div5{
+  margin:25px;
 }
