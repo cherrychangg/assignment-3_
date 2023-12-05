@@ -1,11 +1,10 @@
 /*Button for the facebook, spotify, linkedin, instagram*/
 
-/*Code copied from: https://www.geekboots.com/css/social-icon-with-tooltips
+/* Code copied from: https://www.geekboots.com/css/social-icon-with-tooltips
 Author: Geekboots
 Name: Create Social media icon 
 Description: Social Icon with Tooltips.
-Date retrieved: Oct. 6, 2022
---> */
+Date retrieved: Oct. 6, 2022 */
 
 /* Copied code starts */
 * {
@@ -152,7 +151,13 @@ a:hover svg circle {
 
 /* Copied code ends */
 
-/* Button for the contact me */
+
+/* Code copied from: https://www.youtube.com/watch?v=zgOyj0ucIb0&t=5s
+Author: Code Cary
+Name: Button Ripple Effect on Click Using CSS & Javascript
+Description: Button for the contact me
+Date retrieved: Jun 3, 2021 */
+/* Copied code starts */
 
 .button1 {
     position: relative;
@@ -161,6 +166,7 @@ a:hover svg circle {
     font-size: 20px;
     padding: 20px;
     width: 150px;
+    height: 60px;
     text-align: center;
     transition-duration: 0.4s;
     overflow: hidden;
@@ -187,10 +193,16 @@ a:hover svg circle {
     opacity: 1;
     transition: 0s
 }
+/* Copied code ends */
+
 
 /* Button for the resume*/
-/* https://www.w3schools.com/tags/tag_button.asp */
-
+/* Code copied from: https://www.w3schools.com/tags/tag_button.asp 
+Author: w3school
+Name: Button
+Description: Button with hover effect. 
+Date retrieved: October 18, 2023*/
+/* Copied code starts */
 .button2 {
     width: 150px;
     height: 60px;
@@ -218,19 +230,16 @@ a:hover svg circle {
     background-color: #C1E0FF;
     color: white;
   }
-
-.center {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    position: absolute;
-    top: 130%;
-    left: 40%;
-  }
+/* Copied code end */
 
 
 /* Button for the start page*/
-/* https://www.w3schools.com/tags/tag_button.asp */
+/* Code copied from: https://www.w3schools.com/tags/tag_button.asp 
+Author: w3school
+Name: Button
+Description: Button with hover effect. 
+Date retrieved: October 18, 2023 */
+/* Copied code starts */
  .button3 {
     width: 150px;
     height: 60px;
@@ -258,4 +267,84 @@ a:hover svg circle {
   .button3:hover {
     background-color: #20B051;
     color: white;
+  }
+/* Copied code end */
+
+/* Button for the home page - learn more*/
+/* Code copied from: https://alvarotrigo.com/blog/best-css-button-hover-effects/ 
+Author: Warren Davies
+Name: 10 Best CSS button hover effects
+Description: Displays an hover effect button.
+Date retrieved: October 18, 2023 */
+/* Copied code starts */
+
+.glow-on-hover {
+    width: 150px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #198BFC;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #198BFC
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #198BFC;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+/* Copied code end */
+
+/* Display the text or photos in the center */
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 130%;
+    left: 40%;
   }
