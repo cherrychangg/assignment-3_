@@ -1,128 +1,150 @@
- /* Nevigation bar 
- https://www.youtube.com/watch?v=cH0TC9gWiAg&t=90s*/
-        *, *::before,*::after {
-            box-sizing: border-box;
-        }
+ /* Nevigation bar */
+ /* Code copied from: https://www.geekboots.com/css/social-icon-with-tooltips
+Author: Geekboots
+Name: Create Social media icon 
+Description: Social Icon with Tooltips.
+Date retrieved: Oct. 6, 2022 */
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            background-color: #2F4858;
-        }
+ /* Copied code starts */
 
-        .btn {
-            background-color: var(--background-color);
-            border-radius: 30px;
-            width: 150px;
-            height: 60px;
-            font-size: 20px;
-            text-align: center;
-            font-weight: 400;
-            margin: 5px;
-            position: relative;
-            cursor: pointer;
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
 
-            font-family: "Lato", sans-serif;
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: #2F4858;
+ }
 
-            --background-color: #198BFC;
-        }
-        
-        .flex-parent {
-            display: flex;
-          }
-          
-        .jc-center {
-            justify-content: center;
-          }
-          
-        button.margin-right {
-            margin-right: 20px;
-        }
+ .btn {
+     background-color: var(--background-color);
+     border-radius: 30px;
+     width: 150px;
+     height: 60px;
+     font-size: 20px;
+     text-align: center;
+     font-weight: 400;
+     margin: 5px;
+     position: relative;
+     cursor: pointer;
 
-        .btn.btn-background-circle {
-            z-index: 1;
-            overflow: hidden;
-            background-color: #86BBD8;
-            color: #FFF;
-        }
+     font-family: "Lato", sans-serif;
 
-        .btn.btn-background-circle::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            background-color: var(--background-color);
-            border-radius: 50%;
-            transition: transform 500ms ease-in-out;
+     --background-color: #198BFC;
+ }
 
-            transform: scale(1.5);
-        }
+ .flex-parent {
+     display: flex;
+ }
 
-        .btn.btn-background-circle:hover::before,
-        .btn.btn-background-circle:focus::before {
-            transform: scale(0);
-        }
+ .jc-center {
+     justify-content: center;
+ }
 
-  /*Image for the home page*/
-    img.rounded-corners {
-        border-radius: 40px 40px 0px 0px;
-    }
+ button.margin-right {
+     margin-right: 20px;
+ }
 
-    .content {
-        display: flex;
-    }
+ .btn.btn-background-circle {
+     z-index: 1;
+     overflow: hidden;
+     background-color: #86BBD8;
+     color: #FFF;
+ }
 
-    .content img {
-        margin-right: 10px;
-        display: block;
-    }
+ .btn.btn-background-circle::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: -1;
+     background-color: var(--background-color);
+     border-radius: 50%;
+     transition: transform 500ms ease-in-out;
 
-    .content h3,
-    .content p {
-        margin: 0;
-    }
+     transform: scale(1.5);
+ }
 
-    .text-container {
-        margin-left: 20px;
-      }
-    
-    
-      .center {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        position: absolute;
-        top: 150%;
-        left: 30%;
-      }
-  
+ .btn.btn-background-circle:hover::before,
+ .btn.btn-background-circle:focus::before {
+     transform: scale(0);
+ }
 
-  hr {
-    height: 3px;
-    background: #BDBDBD;
-    border: none;
-  }
+ /* Copied code end */
 
-  .marq { 
-    color: white;
-} 
+ /*Image for the home page*/
+ img.rounded-corners {
+     border-radius: 40px 40px 0px 0px;
+ }
 
-/*Image fade in*/
-    .fade-in-image { 
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
+ .content {
+     display: flex;
+ }
+
+ .content img {
+     margin-right: 10px;
+     display: block;
+ }
+
+ .content h3,
+ .content p {
+     margin: 0;
+ }
+
+ .text-container {
+     margin-left: 20px;
+ }
+
+
+ .center {
+     display: flex;
+     justify-content: center;
+     margin: 0;
+     position: absolute;
+     top: 150%;
+     left: 30%;
+ }
+
+
+ hr {
+     height: 3px;
+     background: #BDBDBD;
+     border: none;
+ }
+
+ .marq {
+     color: white;
+ }
+
+
+/* Code copied from: https://blog.hubspot.com/website/css-fade-in
+Author: Jamie Juviler
+Name: How to Add a CSS Fade-in Transition Animation to Text, Images, Scroll & Hover. 
+Description: Fade-in Image Transition Using CSS. 
+Date retrieved: May 09, 2023 */
+
+/* Copied code starts */
+ .fade-in-image {
+     animation: fadeInAnimation ease 3s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+ }
+
+ @keyframes fadeInAnimation {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+/* Copied code end */
